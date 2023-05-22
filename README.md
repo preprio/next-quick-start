@@ -1,8 +1,6 @@
 # next-quick-start
 The Next quick start project launches a blog app with content from Prepr.
 
-![blog site end result](https://assets-site.prepr.io//5oz8w28ybxje-screenshot-2023-05-10-at-111353.png)
-
 ## Setup
 
 Make sure to install the dependencies:
@@ -50,3 +48,7 @@ npm run preview
 ```
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+
+## The end result
+
+![blog site end result](https://assets-site.prepr.io//5oz8w28ybxje-screenshot-2023-05-10-at-111353.png)
