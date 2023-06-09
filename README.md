@@ -1,6 +1,8 @@
 # next-quick-start
 The Next quick start project launches a blog app with content from Prepr.
 
+>This branch is based on the new next app directory, want to view this project with the pages directory? Switch to the [next-pages](https://github.com/preprio/next-complete-starter/tree/next-pages) branch.
+
 ## Setup
 
 Make sure to install the dependencies:
