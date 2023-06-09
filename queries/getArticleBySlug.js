@@ -1,5 +1,3 @@
-// ./queries/getArticleBySlug.js
-
 import { gql } from "@apollo/client";
 
 export const GetArticleBySlug = gql`

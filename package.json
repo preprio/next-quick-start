@@ -1,5 +1,5 @@
 {
-  "name": "prepr-next-test3",
+  "name": "next13-quick-start",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,14 +9,9 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@apollo/client": "^3.7.14",
-    "graphql": "^16.6.0",
-    "next": "13.4.2",
+    "@apollo/client": "^3.7.15",
+    "next": "13.4.4",
     "react": "18.2.0",
     "react-dom": "18.2.0"
-  },
-  "devDependencies": {
-    "eslint": "8.40.0",
-    "eslint-config-next": "13.4.2"
   }
 }
