@@ -1,7 +1,7 @@
-# next-quick-start
+# Next 13 Quick Start
 The Next quick start project launches a blog app with content from Prepr.
 
-[Stackblitz demo](https://stackblitz.com/edit/next-quick-start)
+Look at the [Next Quick start guide](https://docs.prepr.io/connecting-front-end-apps/next-quick-start-guide) to learn more, or check out the [Stackblitz demo](https://stackblitz.com/edit/next-quick-start) for zero installation.
 
 >This branch is based on the new next app directory, want to view this project with the pages directory? Switch to the [next-pages](https://github.com/preprio/next-complete-starter/tree/next-pages) branch.
 
