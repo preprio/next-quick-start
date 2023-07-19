@@ -1,6 +1,8 @@
 import client from "@/services/apollo-client";
 import {GetArticleBySlug} from "@/queries/getArticleBySlug";
 
+export const revalidate = 0;
+
 async function getData(slug) {
   const {data} = await client.query({
     query: GetArticleBySlug,

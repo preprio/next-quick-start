@@ -3,6 +3,8 @@ import client from "@/services/apollo-client";
 
 import Link from "next/link";
 
+export const revalidate = 0;
+
 async function getData() {
   const {data} = await client.query({
     query: GetArticles,
