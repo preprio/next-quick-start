@@ -8,12 +8,14 @@ query ($slug: String) {
      content {
        __typename
        ... on Text {
-         body
-         text
+        _id
+        body
+        text
        }
        ... on Assets {
          items {
-           url
+          _id
+          url
          }
        }
      }
