@@ -1,4 +1,4 @@
-import { GetArticleBySlug } from "../queries/getArticleBySlug";
+import { GetArticleBySlug } from "../queries/get-article-by-slug";
 import client from "../services/apollo-client";
 
 export default function Article({article}) {

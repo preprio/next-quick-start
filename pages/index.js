@@ -1,9 +1,9 @@
 // ./pages/index.js
 
-import { GetArticles } from "../queries/getArticles";
+import { GetArticles } from "../queries/get-articles";
 import client from "../services/apollo-client";
 
-//Import next links to enable linking 
+//Import next links to enable linking
 import Link from "next/link";
 
 function Home({ articles }) {
@@ -25,7 +25,7 @@ function Home({ articles }) {
 
 
 export default Home;
- 
+
 // Function for server-side rendered app
 // Articles are retrieved when the the page is opened
 

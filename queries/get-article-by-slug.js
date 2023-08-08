@@ -1,4 +1,4 @@
-// ./queries/getArticleBySlug.js
+// ./queries/get-article-by-slug.js
 
 import { gql } from "@apollo/client";
 
