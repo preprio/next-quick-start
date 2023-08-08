@@ -1,5 +1,5 @@
 import client from "@/services/apollo-client";
-import {GetArticleBySlug} from "@/queries/getArticleBySlug";
+import {GetArticleBySlug} from "@/queries/get-article-by-slug";
 
 export const revalidate = 0;
 
@@ -10,7 +10,7 @@ async function getData(slug) {
       slug
     }
   })
- 
+
   return data.Article
 }
 
