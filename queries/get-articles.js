@@ -1,5 +1,3 @@
-// ./queries/get-articles.js
-
 import { gql } from "@apollo/client";
 
 export const GetArticles = gql`
