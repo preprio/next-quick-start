@@ -1,5 +1,5 @@
-# Next 13 Quick Start
-The Next quick start project launches a blog app with content from Prepr.
+# Next.js Quick Start
+The Next.js quick start project launches a blog app with content from Prepr.
 
 Look at the [Next Quick start guide](https://docs.prepr.io/connecting-front-end-apps/next-quick-start-guide) to learn more, or check out the [Stackblitz demo](https://stackblitz.com/edit/next-quick-start) for zero installation.
 
