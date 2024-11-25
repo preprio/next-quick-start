@@ -1,5 +1,5 @@
 import { GetArticles } from "@/queries/get-articles";
-import client from "@/services/apollo-client";
+import client from "@/apollo-client";
 
 import Link from "next/link";
 

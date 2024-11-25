@@ -1,4 +1,4 @@
-import client from "@/services/apollo-client";
+import client from "@/apollo-client";
 import {GetArticleBySlug} from "@/queries/get-article-by-slug";
 
 export const revalidate = 0;
@@ -14,7 +14,8 @@ async function getData(slug) {
   return data.Article
 }
 
-export default async function ArticlePage({params}) {
+export default async function ArticlePage(props) {
+  const params = await props.params;
   const {slug} = params;
   const article = await getData(slug);
 
