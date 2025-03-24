@@ -1,34 +1,34 @@
 import client from "@/apollo-client";
-import {GetArticleBySlug} from "@/queries/get-article-by-slug";
+import {GetPostBySlug} from "@/queries/get-post-by-slug";
 
 export const revalidate = 0;
 
 async function getData(slug) {
   const {data} = await client.query({
-    query: GetArticleBySlug,
+    query: GetPostBySlug,
     variables: {
       slug
     }
   })
 
-  return data.Article
+  return data.Post
 }
 
-export default async function ArticlePage(props) {
+export default async function PostPage(props) {
   const params = await props.params;
   const {slug} = params;
-  const article = await getData(slug);
+  const post = await getData(slug);
 
 
   return (
     <>
       <h1>
-        { article?.title }
+        { post?.title }
       </h1>
 
       {/* Loop through content types in article content */}
 
-      {article?.content.map((contentType) => {
+      {post?.content.map((contentType) => {
 
         //Display image if it exists
         if (contentType.__typename === 'Assets' && contentType.items.length) {

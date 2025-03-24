@@ -1,4 +1,4 @@
-import { GetArticles } from "@/queries/get-articles";
+import { GetPosts } from "@/queries/get-posts";
 import client from "@/apollo-client";
 
 import Link from "next/link";
@@ -7,23 +7,23 @@ export const revalidate = 0;
 
 async function getData() {
   const {data} = await client.query({
-    query: GetArticles,
+    query: GetPosts,
   });
-  return data.Articles.items;
+  return data.Posts.items;
 }
 
 export default async function Home() {
-  const articles = await getData();
+  const posts = await getData();
 
   return (
     <div>
       <h1>My blog site</h1>
       <ul>
-        {articles.map((article) => (
+        {posts.map((post) => (
 
           //List the fetched articles
-          <li key={article._id}>
-            <Link href={article._slug}>{article.title}</Link>
+          <li key={post._id}>
+            <Link href={post._slug}>{post.title}</Link>
           </li>
         ))}
       </ul>
