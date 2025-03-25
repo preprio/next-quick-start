@@ -21,37 +21,41 @@ export default async function PostPage(props) {
 
 
   return (
-    <>
-      <h1>
-        { post?.title }
-      </h1>
+      <>
+        <h1>
+          {post?.title}
+        </h1>
 
-      {/* Loop through content types in article content */}
+        <div className="my-10" key={post?.cover.url}>
+          <img
+              src={post?.cover.url}
+          />
+        </div>
 
-      {post?.content.map((contentType) => {
+        {/* Loop through content types in article content */}
 
-        //Display image if it exists
-        if (contentType.__typename === 'Assets' && contentType.items.length) {
-          return (
-            <div className="my-10" key={contentType.items[0]?._id}>
-              <img
-                src={contentType.items[0]?.url}
-                width="300"
-                height="250"
-              />
-            </div>
-          )
-        }
+        {post?.content.map((contentType) => {
 
-        //Display text as HTML
+          //Display image if it exists
+          if (contentType.__typename === 'Assets' && contentType.items.length) {
+            return (
+                <div className="my-10" key={contentType.items[0]?._id}>
+                  <img
+                      src={contentType.items[0]?.url}
+                  />
+                </div>
+            )
+          }
 
-        if (contentType.__typename === 'Text') {
+          //Display text as HTML
 
-          return (
-            <div key={contentType._id} dangerouslySetInnerHTML={{ __html: contentType.body }}></div>
-          )
-        }
-      })}
-    </>
+          if (contentType.__typename === 'Text') {
+
+            return (
+                <div key={contentType._id} dangerouslySetInnerHTML={{__html: contentType.body}}></div>
+            )
+          }
+        })}
+      </>
   )
 }

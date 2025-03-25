@@ -5,6 +5,9 @@ export const GetPostBySlug = gql`
         Post (slug: $slug) {
             _id
             title
+            cover {
+                url(width: 300, height: 250)
+            }
             content {
                 __typename
                 ... on Text {
@@ -15,7 +18,7 @@ export const GetPostBySlug = gql`
                 ... on Assets {
                     items {
                         _id
-                        url
+                        url(width: 300, height: 250)
                     }
                 }
             }
