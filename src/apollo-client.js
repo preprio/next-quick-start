@@ -1,7 +1,11 @@
-import { ApolloClient, InMemoryCache } from "@apollo/client";
+import { ApolloClient, InMemoryCache, HttpLink } from "@apollo/client";
+
+const httpLink = new HttpLink({
+  uri: `https://graphql.prepr.io/${process.env.PREPR_ACCESS_TOKEN}`,
+});
 
 const client = new ApolloClient({
-  uri: `https://graphql.prepr.io/${process.env.PREPR_ACCESS_TOKEN}`,
+  link: httpLink,
   cache: new InMemoryCache(),
 });
 
