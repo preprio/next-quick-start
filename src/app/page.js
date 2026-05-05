@@ -23,7 +23,7 @@ export default async function Home() {
 
           //List the fetched articles
           <li key={post._id}>
-            <Link href={post._slug}>{post.title}</Link>
+            <Link href={`/${post._slug}`}>{post.title}</Link>
           </li>
         ))}
       </ul>

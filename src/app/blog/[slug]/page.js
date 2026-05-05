@@ -17,7 +17,7 @@ async function getData(slug) {
 export default async function PostPage(props) {
   const params = await props.params;
   const {slug} = params;
-  const post = await getData(slug);
+  const post = await getData(`blog/${slug}`);
 
 
   return (
