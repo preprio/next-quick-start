@@ -1,6 +1,4 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  bundler: 'webpack',
-}
+const nextConfig = {}
 
 module.exports = nextConfig
