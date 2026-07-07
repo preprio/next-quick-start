@@ -32,8 +32,8 @@ importers:
   .:
     dependencies:
       '@apollo/client':
-        specifier: ^4.2.3
-        version: 4.2.3(graphql@16.12.0)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(rxjs@7.8.2)
+        specifier: ^4.2.6
+        version: 4.2.6(graphql@16.12.0)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(rxjs@7.8.2)
       eslint-config-next:
         specifier: ^16.2.9
         version: 16.2.9(@typescript-eslint/parser@8.61.1(eslint@9.39.4)(typescript@5.9.3))(eslint@9.39.4)(typescript@5.9.3)
@@ -53,8 +53,8 @@ importers:
 
 packages:
 
-  '@apollo/client@4.2.3':
-    resolution: {integrity: sha512-+auRYBXow2v7cT+wKzvjyMyyEojq+G7Sf80vIR57rtEPcxRFuMXuU9IKjwxZ3muclUgdGKwZXNeuki+g0GabgQ==}
+  '@apollo/client@4.2.6':
+    resolution: {integrity: sha512-zAkN947OHLLvSaEZvhXmT2YGPuDSJyIlW3+ylvxbRfSQFJW5PiaGs0PvhhMGfyYvO8gtfg+JjI8jjkczQSwt5w==}
     peerDependencies:
       graphql: ^16.0.0 || ^17.0.0
       graphql-ws: ^5.5.5 || ^6.0.3
@@ -1788,7 +1788,7 @@ packages:
 
 snapshots:
 
-  '@apollo/client@4.2.3(graphql@16.12.0)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(rxjs@7.8.2)':
+  '@apollo/client@4.2.6(graphql@16.12.0)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(rxjs@7.8.2)':
     dependencies:
       '@graphql-typed-document-node/core': 3.2.0(graphql@16.12.0)
       '@wry/caches': 1.0.1
